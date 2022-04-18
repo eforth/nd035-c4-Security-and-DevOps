@@ -94,4 +94,18 @@ public class Cart {
 		}
 		total = total.subtract(item.getPrice());
 	}
+
+	/**
+	 * Clears the cart after user has submitted their order
+	 */
+	public void reset() {
+		if(items == null) {
+			items = new ArrayList<>();
+		}
+		items.clear();
+		if(total == null) {
+			total = new BigDecimal(0);
+		}
+		total = BigDecimal.valueOf(0);
+	}
 }

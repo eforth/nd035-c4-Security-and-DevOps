@@ -1,1 +1,5 @@
 .idea/
+/starter_code/target/
+*.log
+/.github/
+auth-course.iml
